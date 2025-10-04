@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","15531","ID:1 -- 管理员登录成功","testcases","Sat Oct 04 15:25:24 NZDT 2025","broken","Sat Oct 04 15:25:40 NZDT 2025","TestRunner","test_runner","",""
+"","504","ID:6 -- 图片上传成功","testcases","Sat Oct 04 15:25:42 NZDT 2025","failed","Sat Oct 04 15:25:42 NZDT 2025","TestRunner","test_runner","",""
+"","615","ID:3 -- 查询用户数据列表成功","testcases","Sat Oct 04 15:25:41 NZDT 2025","failed","Sat Oct 04 15:25:42 NZDT 2025","TestRunner","test_runner","",""
+"","1593","ID:2 -- 未登录状态，查询用户列表失败","testcases","Sat Oct 04 15:25:40 NZDT 2025","passed","Sat Oct 04 15:25:41 NZDT 2025","TestRunner","test_runner","",""

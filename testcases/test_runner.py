@@ -1,3 +1,4 @@
+import logging
 import sys
 import os
 from jinja2 import Template
@@ -37,6 +38,9 @@ class TestRunner:
 
             #初始化allure报告
             allure_init(case=case)
+
+            # 0.测试用例的描述信息日志
+            logging.info(f"0.用例ID：{case["id"]} 模块：{case["feature"]} 场景：{case["story"]} 标题：{case["title"]}")
 
             # 核心步骤1: 解析请求数据
             request_data = analyse_case(case)

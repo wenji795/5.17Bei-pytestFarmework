@@ -1,3 +1,5 @@
+import logging
+
 import allure
 import jsonpath
 from utils.send_request import send_jdbc_request
@@ -13,6 +15,7 @@ def json_extractor(case, all, res):#传进来全局变量all
                 # 现在全局属性all在测试函数外面
                 all[key] = v
                 # print(all)
+            logging.info(f"4.JSON提取, 根据{case["jsonExData"]}提取数据， 此时全局变量为{all}")
 
 
 def jdbc_extractor(case, all):
@@ -21,3 +24,4 @@ def jdbc_extractor(case, all):
             for key, q_value in eval(case["sqlExData"]).items():
                 v = send_jdbc_request(q_value)
                 all[key] = v
+            logging.info(f"4.JDBC提取, 根据{case["sqlExData"]}提取数据， 此时全局变量为{all}")
